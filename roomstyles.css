@@ -1,0 +1,371 @@
+body, html {
+    	    max-width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0; height: 300%; overflow: hidden;
+
+}
+#svgloader{
+	display: inline-block;
+	position: fixed;
+	width: 150px;
+	height: 150px;
+	
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 10;
+}
+
+
+
+#begincontainer{
+	position: fixed;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+/*	margin-left: 4%;*/
+	display: flex;
+	flex-direction: row;
+	z-index: 2;
+
+
+}
+.back{
+	width: 20%;
+	height: 10%;
+	
+	z-index: 5;
+	position: fixed;
+	margin-left: 1%;
+	margin-top: 0%;
+	font-family: serif;
+	font-size: 40pt;
+
+	color: #DBDBDB;
+}
+
+.back{
+	width: 10%;
+	height: 3%;
+	
+	z-index: 5;
+	position: fixed;
+	margin-left: 1%;
+	margin-top: 0%;
+	font-family: serif;
+	font-size: 40pt;
+
+	color: #DBDBDB;
+}
+
+.back:hover{
+	font-family: sans-serif;
+}
+
+
+.artinfo{
+	color: #999999;
+
+	position: fixed;
+	bottom:2%;
+
+	font-family: proxima-nova, sans-serif;
+}
+
+#circleinfo{
+	left:21%;
+	cursor: pointer;
+}
+
+#catsoinfo{
+	left:46% ;
+	cursor: pointer;
+}
+
+#mileinfo{
+	left:71%;
+	cursor: pointer;
+}
+
+#danaeinfo{
+	left:96%;
+	cursor: pointer;
+}
+.innerbegin{
+	width: 25%;
+	height: 100%;
+	border-right: solid 1px white;
+	  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+#mile{
+	width: 50px;
+	height: 100%;
+	background-color: #DBDBDB;
+	  transition: .5s;
+	  cursor: pointer;
+}
+
+.mile2{
+  background-color:#A7D8E8;
+  box-shadow: 0px 0px 40px 40px #A7D8E8 ;
+  transition: .5s;
+}
+
+#danaecont{
+
+height: 100%;
+width: 25%;
+background-color: black;
+z-index: 4;
+}
+
+#milecontainer{
+	background-color: black;
+	z-index: 5;
+	height: 100%;
+}
+#danae{
+
+
+height: 45%;
+margin-top: 66%;
+
+cursor: pointer;
+background-color: #DBDBDB;
+transition: .5s;
+}
+
+
+.danae{
+  background-color:#4182f2;
+  box-shadow: 0px 0px 40px 40px #4182f2 ;
+  transition: .5s;
+
+}
+
+
+#catso{
+  height: 480px;
+
+
+  shape-outside: polygon();
+  clip-path: polygon(66% 0, 100% 20%, 100% 80%, 66% 100%, 0 80%, 0 20%);
+  background: #DBDBDB;
+  margin: auto;
+  margin-top: 60%;
+  filter: none;
+  transition: .5s;
+cursor: pointer;
+z-index: 0;
+
+
+}
+
+.catso{
+	  z-index: 2;
+
+  filter: drop-shadow(0px 0px 13px #f00236) 
+  drop-shadow(0px 0px 25px #f00236);
+
+/*  drop-shadow(0px 0px 14px #f00236)*/
+
+
+
+
+
+
+  transition: .5s;
+}
+
+#circle{
+	z-index: 5;
+	background-color: black;
+	z-index: 5;
+}
+
+#untitled{
+	width: 100%;
+	height: 45%;
+	border-radius: 50%;
+	background-color: #DBDBDB;
+/*	z-index: 2;*/
+	margin-top: 62%;
+	margin-left: -20%;
+	transition: .5s;
+	cursor: pointer;
+}
+
+.untitled{
+  background-color:#DBDBDB;
+  box-shadow: 0px 0px 40px 40px #DBDBDB;
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================================== 
+  Our Modal Window styles
+=====================================*/
+
+.overlays{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 0;
+	background:transparent;
+	color: #DBDBDB;
+
+
+}
+.modal__overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+}
+
+.modal__overlay2 {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.close{
+	cursor: pointer;
+	text-align: right;
+	font-size: 36pt;
+	font-family: adobe-garamond-pro, serif;
+	font-style: italic;
+	margin-right: 3%;
+	padding-top: 3%;
+
+}
+
+.z{
+	z-index: 200;
+	transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+
+
+#circlesvg{
+
+	width: 80%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -7%;
+
+}
+#catsosvg{
+
+	width: 80%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -4%;
+
+}
+
+#danaesvg{
+
+	width: 80%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -4%;
+
+}
+
+
+.overlay_catso {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+  position: absolute;
+}
+
+.overlay_catso2 {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.overlay_danae{
+	 position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -100;
+ 
+}
+
+
+.overlay_danae2{
+  opacity: 1;
+  transform: scale(1);
+  z-index: 800;
+  transition: all 1.55s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+
+
