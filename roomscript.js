@@ -3,7 +3,7 @@ $(window).load(function () {
         setTimeout(function(){
             $('.loader-wrapper').fadeOut('slow', function () {
             });
-        },2000); // set the time here
+        },000); // set the time here
 });
    $(function(){
    setTimeout(function(){
@@ -224,7 +224,42 @@ $('#closedanae').click(function (){
 
 
 
+$('#infohead').click(function(){
+  $("#sidebarcollapse").toggleClass("sidebarexpand");
 
+})
+
+$('#questionmark').hover(function(){
+  $("#question").toggleClass("show");
+
+})
+
+
+$('#infoheadcatso').click(function(){
+  $("#sidebarcollapsecatso").toggleClass("sidebarexpand");
+
+})
+
+$('#questionmarkcatso').hover(function(){
+  $("#questioncatso").toggleClass("show");
+
+})
+
+
+$('#infoheaddanae').click(function(){
+  $("#sidebarcollapsedanae").toggleClass("sidebarexpand");
+
+})
+
+$('#questionmarkdanae').hover(function(){
+  $("#questiondanae").toggleClass("show");
+
+})
+
+// $('#location').click(function(){
+//   $("#sitebarcollapse").toggleClass("sitebarexpand");
+
+// })
 
 
 

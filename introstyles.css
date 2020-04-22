@@ -1,0 +1,43 @@
+
+html,body{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	justify-content: center;
+	align-items: center;
+	font-family: proxima-nova,sans-serif;
+	color: #888888;
+	text-align: center;
+
+}
+
+#ins{	
+	margin-top: 20%;
+	font-size: 14pt;
+
+}
+
+#nothing{
+		font-family: adobe-garamond-pro,sans-serif;
+		font-style: italic;
+		font-size: 18pt;
+
+
+}
+
+
+#begin{
+		color: #888888;
+		transition: 1s;
+		letter-spacing: 1pt;
+}
+
+#begin:hover{
+		color: white;
+		transition: 1s;
+}
+a{
+	text-decoration: none;
+}
