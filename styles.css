@@ -38,22 +38,23 @@ svg{
   transform: translateY(-50%);
 	  margin: 0 auto;
   width: 320px;  
+  margin-bottom: 20%;
 
 }
 .shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
+    stroke-dasharray: 140, 540;
+    stroke-dashoffset: -474;
   stroke-width: 2px;
   fill: transparent;
   stroke: #555555;
-  border-bottom: 2px solid black;
-  transition: stroke-width 1.2s, stroke-dashoffset 1.2s, stroke-dasharray 1.2s;
+ /* border-bottom: 2px solid black;*/
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .text {
   font-family: proxima-nova, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 32px;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   color: #555555;
   margin-top: -90px;
   text-align: center;
@@ -68,7 +69,7 @@ svg{
 
 
 #about{
-	height: 240%;
+	height: 280%;
 	background-color: #DBDBDB;
 	z-index: 50;
 
@@ -131,12 +132,29 @@ nav{
 	display:flex;
 	font-family: proxima-nova, sans-serif;
 	position: fixed;
+	bottom:2%;
+	left:88%;
 	color: #888888;
-	margin-top: -23%;
+	font-size: 10pt;
+	letter-spacing: 1pt;
+	margin-top: -25%;
 	width: 20%;
 	text-decoration: none;
+/*	border: solid 1pt #888888;
+	background-color: black;*/
+	height: 5%;
 
 
+}
+
+
+#navart{
+	position: fixed;
+	font-family: georgia,serif;
+	font-size: 12pt;
+	font-style: italic;
+	margin-left: 2%;
+	margin-top: 2%;
 
 
 }
@@ -146,25 +164,38 @@ a{
 	text-decoration: none;
 }
 .navitem1{
-	width:90%;
+	width:10%;
 	cursor: pointer;
 	text-decoration: none;
 }
 
 .navitem2{
-	width:90%;
+	width:25%;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 1s;
 }
 
 .navitem3{
-	width:90%;
+	width:25%;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 1s;
 }
+
+.navitem2:hover{
+	color: white;
+	transition: 1s;
+}
+
+.navitem3:hover{
+	color: white;
+	transition: 1s;
+}
+
 #title{
 	color: #DBDBDB;
-	font-size: 180pt;
+	font-size: 200pt;
 	font-family: georgia, serif;
 	font-style: italic;
 	line-height: -40px;
@@ -175,7 +206,7 @@ a{
 
 #titleart{
 	margin-left: -85%;
-	margin-top: -37%;
+	margin-top: -43%;
 
 }
 
@@ -190,12 +221,12 @@ a{
 	width: 100%;
 
 	color: #DBDBDB;
-	font-size: 16pt;
+	font-size: 18pt;
 font-family: proxima-nova, sans-serif;
 font-weight: 300;
 font-style: italic;
-margin-left: 55%;
-margin-top: -15%;
+margin-left: 60%;
+margin-top: -16%;
 
 
 
@@ -205,7 +236,8 @@ margin-top: -15%;
 }
 #scrolltxt{
 	font-family: proxima-nova, sans-serif;
-	font-size: 12pt;
+	font-size: 10pt;
+	letter-spacing: 1pt;
 	position: absolute;
 	margin-top: 19%;
 	color: #DBDBDB;
@@ -216,11 +248,13 @@ margin-top: -15%;
 #scroll{
 font-family: serif;
 
-/*transform: rotate(-90deg);*/
-width:3%;
-height: 10%;
-/*margin-left: 80%;*/
-margin-top: 23%;
+transform: rotate(-90deg);
+width:4%;
+height: 0%;
+border-bottom: solid 1pt #DBDBDB;
+margin-left:auto;
+margin-right: auto;
+margin-top: 22%;
 color: #DBDBDB;
 font-size: 40pt;
 position: absolute;
@@ -235,6 +269,8 @@ position: absolute;
 #about{
 	height: 200%;
 	background-color: #DBDBDB;
+
+
 	
 }
 
@@ -248,10 +284,18 @@ position: absolute;
 margin-left: auto;
 margin-right: auto;
 	margin-top: 10%;
+
 	letter-spacing: 2pt;
 	text-align: center;
 
 
+}
+
+.hyphen{
+border-bottom: 2pt solid #555555;
+width: 7%;
+margin-left: 46.4%;
+margin-top: 4%;
 }
 .abouttext{
 	font-family: proxima-nova, sans-serif;
@@ -286,6 +330,15 @@ margin-right: auto;
 
 /*	text-align: center;*/
 	
+}
+
+.cite{
+	color:#555555;
+	font-family: adobe-garamond-pro, serif;
+	margin-left: 61%;
+	font-size: 10pt;
+	margin-top: 2%;
+
 }
 
 
