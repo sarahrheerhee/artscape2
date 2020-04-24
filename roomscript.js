@@ -1,14 +1,16 @@
 jQuery(document).ready(function ($) {
 $(window).load(function () {
+  $('body').css('display', 'none');
+$('body').fadeIn(1500);
         setTimeout(function(){
             $('.loader-wrapper').fadeOut('slow', function () {
             });
-        },2000); // set the time here
+        },0000); // set the time here
 });
    $(function(){
    setTimeout(function(){
      $(body).fadeIn('slow');
-   },3000);
+   },300);
 
 
 
@@ -132,9 +134,9 @@ $('#danae').mouseleave( function () {
 $('#catso').mouseover( function () {
 
    $("#catso").addClass("catso");
-   $("#catso").css("background-color","#f00236");
-   $("#catsoinfo").css("left","84.1%");
-   $("#catsocont").css("filter","drop-shadow(0px 0px 40px #f00236)");
+   $("#catso").css("background-color","#f11717");
+  
+   // $("#catsocont").css("filter","drop-shadow(0px 0px 40px #f00236)");
 
 
 });
@@ -146,8 +148,8 @@ $('#catso').mouseleave( function () {
 
    $("#catso").removeClass("catso");
    $("#catso").css("background-color","#DBDBDB");
-    $("#catsocont").css("filter","none");
-     $("#catsoinfo").css("left","46%");
+    // $("#catsocont").css("filter","none");
+    //  $("#catsoinfo").css("left","46%");
 
 });
 
@@ -203,6 +205,22 @@ $('#closecatso').click(function (){
 
 });
 
+$('#mile').click(function (){
+  $('.overlay_mile').addClass("overlay_mile2");
+  $(".overlays").addClass("z");
+
+
+
+});
+
+$('#closemile').click(function (){
+  $('.overlay_mile').removeClass("overlay_mile2");
+  $(".overlays").removeClass("z");
+
+
+
+});
+
 
 
 $('#danae').click(function (){
@@ -229,8 +247,8 @@ $('#infohead').click(function(){
 
 })
 
-$('#questionmark').hover(function(){
-  $("#question").toggleClass("show");
+$('#mark').hover(function(){
+  $("#hover").toggleClass("show");
 
 })
 
@@ -256,6 +274,16 @@ $('#questionmarkdanae').hover(function(){
 
 })
 
+
+$('#infoheadmile').click(function(){
+  $("#sidebarcollapsemile").toggleClass("sidebarexpand");
+
+})
+
+$('#questionmarkmile').hover(function(){
+  $("#questionmile").toggleClass("show");
+
+})
 // $('#location').click(function(){
 //   $("#sitebarcollapse").toggleClass("sitebarexpand");
 
@@ -281,7 +309,10 @@ $('#questionmarkdanae').hover(function(){
    //        $('.menutext').css('color', 'white');
    //     }
    // });
+
+
 });
+
 
 
 });  
