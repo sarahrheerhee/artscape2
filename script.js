@@ -4,7 +4,7 @@ $(window).load(function () {
         setTimeout(function(){
             $('.loader-wrapper').fadeOut(1100, function () {
             });
-        },000); // set the time here
+        },3000); // set the time here
 });
    $(function(){
    setTimeout(function(){

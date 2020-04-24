@@ -5,7 +5,7 @@ $('body').fadeIn(1500);
         setTimeout(function(){
             $('.loader-wrapper').fadeOut('slow', function () {
             });
-        },0000); // set the time here
+        },4500); // set the time here
 });
    $(function(){
    setTimeout(function(){
